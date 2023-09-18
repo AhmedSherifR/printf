@@ -29,7 +29,7 @@ int print_string(char *ar)
 	char *ch = ar;
 
 	while (*ch)
-	putchar(*ch++);
+	_putchar(*ch++);
 
 	return (string_length(ar));
 	}

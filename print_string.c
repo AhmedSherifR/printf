@@ -3,7 +3,7 @@
 /**
 * string_length - to get string length.
 * @chr: the string we want the length for.
-* Return: if (chr) then integer of lentgth else 0.
+* Return: if (chr) then integer of length else 0.
 */
 int string_length(char *chr)
 {

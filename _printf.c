@@ -45,7 +45,7 @@ int _printf(const char *format, ...)
 	arg3 = va_arg(args, char *);
 	if (arg3 == NULL)
 	{
-	count += print_string("NULL");
+	count += print_string("(null)");
 	break;
 	}
 	count += print_string(arg3);

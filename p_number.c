@@ -10,6 +10,7 @@ int p_number(int ar)
 	long n = ar;
 	char c;
 	int counter = 0;
+	int zero_ind = 0;
 
 	if (ar == 0)
 	{
@@ -26,6 +27,9 @@ int p_number(int ar)
 	while (n)
 	{
 	g = g * 10 + n % 10;
+	if (!g)
+	zero_ind++;
+
 	n = n / 10;
 	}
 	while (g)
@@ -35,5 +39,15 @@ int p_number(int ar)
 	counter++;
 	g /= 10;
 	}
+	if (zero_ind)
+	{
+	while (zero_ind)
+	{
+	_putchar('0');
+	counter++;
+	--zero_ind;
+	}
+	}
+
 	return (counter);
 }
